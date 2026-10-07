@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0F15">
+  <meta name="description" content="ИИ в Граданализе — веб-лекция Никиты Скорнякова. Исследования, база знаний, агенты и визуальный результат.">
+  <title>ИИ в Граданализе / СПбГАСУ — Никита Скорняков</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0f15'/%3E%3Cpath d='M7 24V8h7v16m4 0V8h7v16' stroke='%2322d3ee' fill='none' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="stage">
+    <canvas id="city" width="1600" height="900" aria-hidden="true"></canvas>
+    <div class="ambient" aria-hidden="true"></div>
+    <header class="frame"><a class="brand" href="#slide-01">ИИ в Граданализе <span>/ СПбГАСУ</span></a><a href="https://t.me/skornyakov_nik" target="_blank" rel="noopener noreferrer">тг: @skornyakov_nik</a></header>
+    <main id="deck" aria-label="Презентация ИИ в Граданализе"></main>
+    <footer class="frame"><span id="chapter"></span><span>Никита Скорняков</span></footer>
+    <nav class="controls" aria-label="Навигация по презентации">
+      <button id="prev" aria-label="Предыдущий слайд" title="Предыдущий слайд (←)">←</button>
+      <button id="overview-open" aria-label="Открыть все слайды" title="Все слайды (M)"><span id="counter">01 / 31</span><span class="grid-symbol">⊞</span></button>
+      <button id="next" aria-label="Следующий слайд" title="Следующий слайд (→)">→</button>
+    </nav>
+    <div class="utilities"><button id="motion" aria-label="Отключить анимацию фона" aria-pressed="false" title="Анимация фона">◌</button><button id="fullscreen" aria-label="Полный экран" title="Полный экран (F)">⛶</button></div>
+    <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  </div>
+  <p class="portrait-hint">Для показа удобнее повернуть экран</p>
+  <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="overview" aria-labelledby="overview-title"><div class="dialog-top"><div><p class="eyebrow">ИИ В ГРАДАНАЛИЗЕ / 31 СЛАЙД</p><h2 id="overview-title">Маршрут лекции</h2></div><button class="close" aria-label="Закрыть все слайды">×</button></div><div id="overview-list"></div></dialog>
+  <dialog id="lightbox" aria-label="Увеличенное изображение"><button class="close" aria-label="Закрыть изображение">×</button><img alt=""><p></p></dialog>
+  <noscript>Для интерактивной презентации включите JavaScript в браузере.</noscript>
+</body>
+</html>
